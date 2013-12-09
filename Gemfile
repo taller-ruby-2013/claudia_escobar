@@ -6,7 +6,11 @@ gem 'rails', '4.0.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
+#implementa lo de loguearse
 gem 'devise'
+
+#amononar el sitio
+gem "bootstrap-sass-rails"
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
