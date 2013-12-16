@@ -1,8 +1,8 @@
-<h1>My posts</h1>
-<table>
+<h1>Mis Posteos</h1>
+<table class="table">
 	<tr>
-		<th>Title</th>
-		<th>Text</th>
+		<th>Título</th>
+		<th>Texto</th>
 		<th></th>
 		<th></th>
     	<th></th>
@@ -11,11 +11,14 @@
 	<tr>
 		<td><%= post.title %></td>
 		<td><%= post.text %></td>
-		<td><%= link_to 'Show', post_path(post) %></td>
-    	<td><%= link_to 'Edit', edit_post_path(post) %></td>
-    	<td><%= link_to 'Destroy', post_path(post), method: :delete, data: { confirm: '¿Estás seguro?' } %></td>
+		<td><%= link_to '<Mostrar>', post_path(post) %></td>
+    	<td><%= link_to '<Editar>', edit_post_path(post) %></td>
+    	<td><%= link_to '<Eliminar>', post_path(post), method: :delete, data: { confirm: '¿Estás seguro?' } %></td>
 	</tr>
 	<% end %>
 </table>
-
-<%= link_to "New Post", new_post_path %>
+<div class="span6">
+        <%= link_to "Nuevo Post", new_post_path, :class => "btn btn-primary btn-claudia" %>
+        <br>
+        <br>
+</div>

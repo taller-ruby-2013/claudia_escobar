@@ -46,3 +46,32 @@
   color: white !important;
   background-color: #1E92C9;
 }
+
+.box-claudia {
+  padding: 30px;
+  margin-bottom: 30px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: #30A2EE;
+  background-color: #000000; }
+  .jumbotron h1,
+  .jumbotron .h1 {
+    line-height: 1;
+    color: #30A2EE; }
+  .jumbotron p {
+    line-height: 1.4; }
+  .container .jumbotron {
+    border-radius: 6px; }
+  .jumbotron .container {
+    max-width: 100%; }
+  @media screen and (min-width: 768px) {
+    .jumbotron {
+      padding-top: 48px;
+      padding-bottom: 48px; }
+      .container .jumbotron {
+        padding-left: 60px;
+        padding-right: 60px; }
+      .jumbotron h1,
+      .jumbotron .h1 {
+        font-size: 63px; } }

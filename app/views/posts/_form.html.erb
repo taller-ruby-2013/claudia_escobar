@@ -1,5 +1,3 @@
-<h1>_form view</h1>
-
 <%= form_for @post do |f| %>
 	
 	 <% if @post.errors.any? %>
@@ -14,16 +12,18 @@
 	<% end %>
 
 	<p>
-		<%= f.label :title %><br>
-		<%= f.text_field :title %>
+		<%= f.label "título" %><br>
+		<%= f.text_field :title, :class => "form-control" %>
 	</p>
 	<p>
-		<%= f.label :text %><br>
-		<%= f.text_area :text %>
+		<%= f.label "texto" %><br>
+		<%= f.text_area :text, :class => "form-control" %>
 	</p>
 	<p>
-		<%= f.submit %>
+		<%= f.submit "Crear Post" %>
 	</p>
+	<br>
+	<br>
 <% end %>
 
-<%= link_to "My posts", posts_path %>
+<%= link_to "Mis Posts", posts_path %>

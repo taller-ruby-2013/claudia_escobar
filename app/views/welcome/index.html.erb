@@ -1,10 +1,10 @@
-<div class="jumbotron">
+<div class="jumbotron box-claudia">
   <% if user_signed_in? %>
     <h1>Bienvenido de vuelta, buen usuario!</h1>
     <p class="lead">
       Acabas de logearte!  Pero en caso de que quieras escapar de inmediato, haz click en el botón rojo :D
     </p>
-    <%= link_to "Entrar al Blog", posts_path, :class => 'btn btn-large btn-claudia' %>
+    <%= link_to "Entrar al Blog", posts_path, :class => "btn btn-primary btn-claudia" %>
     <%= link_to "Salir", destroy_user_session_path, :method => :delete, :class => 'btn btn-large btn-danger' %>
   <% else %>
     <h1>Bienvenido al Blog de Cloooska!</h1>
@@ -13,10 +13,10 @@
     </p>
     <div class="row-fluid">
       <div class="span6">
-        <%= link_to "Ingresar", new_user_session_path, :class => "btn btn-success" %>
+        <%= link_to "Ingresar", new_user_session_path, :class => "btn btn-primary btn-claudia" %>
       </div>
       <div class="span6">
-        <%= link_to "Registrarse", new_user_registration_path, :class => "btn btn-success btn-claudia" %>
+        <%= link_to "Registrarse", new_user_registration_path, :class => "btn btn-primary btn-claudia" %>
       </div>
     </div>
   <% end %>
