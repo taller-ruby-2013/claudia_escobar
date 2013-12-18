@@ -14,8 +14,10 @@
  */
 
 
-
+body {
+  background-image: url('http://www.fondosni.com/images/2012-10-13/Fondo%20negro%20con%20estructura%20en%20lineas-746551.jpg')
  /* User sign in and sign forms. */
+}
 .border-form-div {
   max-width: 300px;
   padding: 19px 29px 29px;
@@ -43,9 +45,16 @@
 }
 
 .btn-claudia {
-  color: white !important;
+  color: black !important;
   background-color: #1E92C9;
+  font-weight: bold;
 }
+
+.btn-claudia2 {
+  color: white !important;
+  background-color: #000000;
+}
+
 
 .box-claudia {
   padding: 30px;
@@ -53,12 +62,12 @@
   font-size: 21px;
   font-weight: 200;
   line-height: 2.1428571435;
-  color: #30A2EE;
-  background-color: #000000; }
+  color: #fff;
+  background-color: #30A2EE; }
   .jumbotron h1,
   .jumbotron .h1 {
     line-height: 1;
-    color: #30A2EE; }
+    color: #fff; }
   .jumbotron p {
     line-height: 1.4; }
   .container .jumbotron {
@@ -75,3 +84,67 @@
       .jumbotron h1,
       .jumbotron .h1 {
         font-size: 63px; } }
+
+.box-claudia2 {
+  padding: 30px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: inherit;
+  background-image: url('http://2.bp.blogspot.com/-cFVxsHASQNI/TrxJlBgWJnI/AAAAAAAAAVE/Kk9n6bcENyc/s1600/fondo+azul.jpg');
+   }
+  .jumbotron h1,
+  .jumbotron .h1 {
+    line-height: 1;
+    color: inherit; }
+  .jumbotron p {
+    line-height: 1.4; }
+  .container .jumbotron {
+    border-radius: 6px; }
+  .jumbotron .container {
+    max-width: 100%; }
+  @media screen and (min-width: 768px) {
+    .jumbotron {
+      padding-top: 48px;
+      padding-bottom: 48px; }
+      .container .jumbotron {
+        padding-left: 60px;
+        padding-right: 60px; }
+      .jumbotron h1,
+      .jumbotron .h1 {
+        font-size: 30px; } }
+
+.box-claudia3 {
+  padding: 20px;
+  margin-bottom: 30px;
+  font-size: 21px;
+  font-weight: 200;
+  line-height: 2.1428571435;
+  color: white;
+  background-image: url('http://3.bp.blogspot.com/-eKtY6qmDv6w/UT389730B_I/AAAAAAAAGoQ/CoN2oDiRTkY/s1600/BB_BlueHaze_04.jpg');
+   }
+  .jumbotron h1,
+  .jumbotron .h1 {
+    line-height: 1;
+    color: inherit; }
+  .jumbotron p {
+    line-height: 1.4; }
+  .container .jumbotron {
+    border-radius: 6px; }
+  .jumbotron .container {
+    max-width: 100%; }
+  @media screen and (min-width: 768px) {
+    .jumbotron {
+      padding-top: 48px;
+      padding-bottom: 48px; }
+      .container .jumbotron {
+        padding-left: 60px;
+        padding-right: 60px; }
+      .jumbotron h1,
+      .jumbotron .h1 {
+        font-size: 63px; } }
+
+.color-white{
+  color: white;
+}

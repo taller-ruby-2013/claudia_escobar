@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog</title>
+  <title>Blog de Cloooska</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -10,14 +10,16 @@
 <div class="container">
   <div class="masthead">
     <%= render 'layouts/user_header' %>
-    <h3 class="muted"><%= link_to "El Blog de Cloooska", root_path %></h3>
-    <h5 class="muted">Un entretenido lugar para comentar</h5>
+    <h2 class="muted"><%= link_to "El Blog de Cloooska", root_path %></h2>
+    <h5 class="color-white">Un entretenido lugar para comentar</h5>
   </div>
   <hr />
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
   <%= yield %>
 </div>
+<div class="color-white">
 :D #Rhodium2013 & Cloooska
+</div>
 </body>
 </html>

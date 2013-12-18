@@ -1,26 +1,25 @@
-<div class="jumbotron box-claudia">
-<p>
+<div class="border-form-div jumbotron box-claudia3">
+<p class="color-white">
 	<strong>Título:</strong>
 	<%= @post.title %>
 </p>
 
-<p>
+<p class="color-white">
 	<strong>Texto:</strong>
 	<%= @post.text %>
 </p>
 </div>
 
 
-<h2>Comments</h2>
+<h2 class="color-white">Comentarios</h2>
 <%= render @post.comments %>
 
 <%= render "comments/form" %>
 
-<%= link_to "Mis Posts", posts_path %>
-<%= link_to 'Editar', edit_post_path(@post) %>
 <div class="span6">
         <%= link_to "Mis Posts", posts_path, :class => "btn btn-primary btn-claudia" %>
 </div>
+<br>
 <div class="span6">
         <%= link_to "Editar", edit_post_path(@post), :class => "btn btn-primary btn-claudia" %>
 </div>

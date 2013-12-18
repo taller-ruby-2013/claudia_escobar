@@ -1,14 +1,19 @@
-<p>
-  <strong>Commenter:</strong>
+<table class="table">
+<th></th>
+<tr>
+<p class="color-white">
+  <strong>Bloguero:</strong>
   <%= comment.commenter %>
 </p>
  
-<p>
-  <strong>Comment:</strong>
+<p class="color-white">
+  <strong>Comentario:</strong>
   <%= comment.body %>
 </p>
 <p>
-  <%= link_to 'Destroy Comment', [comment.post, comment],
+  <%= link_to 'Eliminar Comentario', [comment.post, comment],
                method: :delete,
-               data: { confirm: 'Are you sure?' } %>
+               data: { confirm: '¿Estás seguro?' } %>
 </p>
+<tr>
+</table>
