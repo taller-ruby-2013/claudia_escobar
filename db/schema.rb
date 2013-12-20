@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131209193853) do
+ActiveRecord::Schema.define(version: 20131219153616) do
+
+  create_table "bloggers", force: true do |t|
+    t.string   "title"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "bloggers", ["user_id"], name: "index_bloggers_on_user_id"
 
   create_table "comments", force: true do |t|
     t.string   "commenter"
@@ -28,6 +37,7 @@ ActiveRecord::Schema.define(version: 20131209193853) do
     t.text     "text"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "blogger_id"
   end
 
   create_table "users", force: true do |t|

@@ -3,7 +3,7 @@
 <table class="table">
 	<tr>
 		<th>Título</th>
-		<th>Texto</th>
+		<th>Post</th>
 		<th></th>
 		<th></th>
     	<th></th>
@@ -15,7 +15,7 @@
 		
     	<td>
     		<div class="span6">
-        	<%= link_to "Mostrar", post_path(post), :class => "btn btn-primary btn-claudia" %>
+        	<%= link_to "Mostrar", blogger_post_path(post), :class => "btn btn-primary btn-claudia" %>
 			</div>
     	</td>
     	<td>
@@ -32,7 +32,7 @@
 	<% end %>
 </table>
 <div class="span6">
-        <%= link_to "Nuevo Post", new_post_path, :class => "btn btn-primary btn-claudia" %>
+        <%= link_to "Nuevo Post", new_blogger_post_path, :class => "btn btn-primary btn-claudia" %>
         <br>
         <br>
 </div>

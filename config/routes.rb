@@ -1,4 +1,6 @@
 Blog::Application.routes.draw do
+  resources :bloggers
+
   devise_for :users
   get "welcome/index"
   # The priority is based upon order of creation: first created -> highest priority.
@@ -7,9 +9,10 @@ Blog::Application.routes.draw do
   # You can have the root of your site routed with "root"
    root 'welcome#index'
 
-
-    resources :posts do
-    resources :comments
+    resources :bloggers do
+     resources :posts do
+      resources :comments
+     end
     end
 
   # Example of regular route:
